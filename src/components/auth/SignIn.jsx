@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Button, Card, Form, NavLink } from 'react-bootstrap'
 import { HiOutlineUserCircle } from 'react-icons/hi'
 import { BsShieldLock } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const SignIn = () => {
   return (
@@ -25,7 +26,7 @@ const SignIn = () => {
                 <div className='input-filed mt-3'>
                   <div className='d-flex align-items-center justify-content-between'>
                     <label>Password</label>
-                    <NavLink>Forgot password?</NavLink>
+                    <Link to="/reset-password">Forgot password?</Link>
                   </div>
                   <div className='input-main rounded-2 d-flex align-items-center'>
                     <span><BsShieldLock /></span>
@@ -36,7 +37,7 @@ const SignIn = () => {
               </Form>
             </Card.Body>
           </Card>
-          <p className='mt-4'>Don't have an account ? <NavLink>Signup now</NavLink></p>
+          <p className='mt-4'>Don't have an account ? <Link to="/sign-up">Sign up</Link></p>
         </div>
       </div>
     </Fragment>

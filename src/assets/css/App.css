@@ -132,6 +132,7 @@ p {
 }
 
 .auth-box .input-filed a {
+  text-decoration: none;
   color: #7a7f9a !important;
   font-size: 13px;
   font-weight: 400;
@@ -180,6 +181,7 @@ p {
 .auth-box p a{
   display: inline-block;
   color: #7269ef !important;
+  text-decoration: none;
 }
 
 /* auth page start */

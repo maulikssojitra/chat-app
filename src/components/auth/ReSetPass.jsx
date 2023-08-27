@@ -3,6 +3,7 @@ import { Button, Card, Form, NavLink } from 'react-bootstrap'
 import { HiOutlineUserCircle } from 'react-icons/hi'
 import { BsShieldLock } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const ReSetPass = () => {
     return (
@@ -28,7 +29,7 @@ const ReSetPass = () => {
                             </Form>
                         </Card.Body>
                     </Card>
-                    <p className='mt-4'>Remember It ? <NavLink>Signin</NavLink></p>
+                    <p className='mt-4'>Remember It ? <Link to="/">Signin</Link></p>
                 </div>
             </div>
         </Fragment>
